@@ -24,14 +24,14 @@ const Testimonials = () => {
   const current = testimonials[currentSlide];
 
   return (
-    <Container id="testimonials" className="">
+    <Container id="testimonials" className="py-24">
       {/* Header Section */}
       <motion.div 
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, margin:"-50px" }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-8"
+        className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-12 gap-6 md:gap-8"
       >
         <SectionHeader
           label="Ulasan Pelanggan"
@@ -65,7 +65,7 @@ const Testimonials = () => {
       {/* Two-Column Card Layout */}
       <div className={`grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 h-auto lg:h-[600px] transition-all duration-300 ${isAnimating ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'}`}>
         {/* Left Column: Quote Card */}
-        <div className="bg-white p-10 md:p-14 flex flex-col justify-between h-[400px] lg:h-full">
+        <div className="bg-white p-8 md:p-14 flex flex-col justify-between h-[400px] lg:h-full">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-full border-2 border-gray-900 flex items-center justify-center">
               <div className="w-3 h-3 bg-gray-900 rounded-sm rotate-45"></div>
@@ -73,7 +73,7 @@ const Testimonials = () => {
             <span className="font-bold text-xl tracking-tight text-gray-900 uppercase">ErdaVerified</span>
           </div>
 
-          <div className="flex flex-col gap-8 mt-auto">
+          <div className="flex flex-col gap-4 md:gap-8 mt-auto">
             <blockquote className="text-2xl md:text-[2rem] font-medium leading-[1.3] tracking-tight text-gray-900">
               {current.quote}
             </blockquote>

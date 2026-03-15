@@ -6,12 +6,12 @@ import { siteConfig } from '../data';
 const Location = () => {
 
   return (
-    <Container id="location">
+    <Container id="location" className="py-24">
       {/* Header */}
-      <motion.div 
+      <motion.div
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, margin:"-50px" }}
+        viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className="mb-12"
       >
@@ -24,10 +24,10 @@ const Location = () => {
       {/* Two Column Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full">
         {/* Left Column: Info Box */}
-        <motion.div 
+        <motion.div
           initial={{ x: -40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true, margin:"-50px" }}
+          viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="flex flex-col justify-between bg-white rounded-4xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 relative overflow-hidden group"
         >
@@ -61,12 +61,8 @@ const Location = () => {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex flex-col">
-                  <span className="text-sm font-medium text-gray-500">Senin - Jumat</span>
-                  <span className="text-gray-900 font-bold">08:00 — 17:00</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-sm font-medium text-gray-500">Sabtu</span>
-                  <span className="text-gray-900 font-bold">09:00 — 15:00</span>
+                  <span className="text-sm font-medium text-gray-500">Senin - Sabtu</span>
+                  <span className="text-gray-900 font-bold">08:00 — 16:30</span>
                 </div>
                 <div className="flex flex-col border-t border-gray-200 pt-3 mt-1 col-span-1 sm:col-span-2">
                   <span className="text-sm font-medium text-[red]">Minggu</span>
@@ -90,10 +86,10 @@ const Location = () => {
         </motion.div>
 
         {/* Right Column: Google Maps */}
-        <motion.div 
+        <motion.div
           initial={{ x: 40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true, margin:"-50px" }}
+          viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="rounded-4xl overflow-hidden shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-200 bg-gray-50 min-h-[600px] lg:min-h-[750px]"
         >

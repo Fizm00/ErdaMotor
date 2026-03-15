@@ -15,7 +15,7 @@ const About = () => {
   return (
     <div className="w-full bg-white flex flex-col pt-16">
       {/* Section 1: Introduction & Trust (White Theme) */}
-      <Container id="about" className="pt-12 pb-24">
+      <Container id="about" className="py-24">
         {/* Header Area */}
         <motion.div
           initial={{ y: 30, opacity: 0 }}
@@ -30,11 +30,6 @@ const About = () => {
             className="max-w-2xl"
           />
           <div className="max-w-xs md:mt-12">
-            <div className="flex -space-x-3 mb-4">
-              {[...Array(3)].map((_, i) => (
-                <div key={i} className={`w-10 h-10 rounded-full border-2 border-white bg-gray-${200 + i * 100}`}></div>
-              ))}
-            </div>
             <p className="text-gray-600 text-sm leading-relaxed">
               Sejak 2005, ErdaMotor hadir sebagai destinasi terpercaya untuk kebutuhan kendaraan roda dua dan suku cadang Anda.
             </p>
@@ -85,7 +80,7 @@ const About = () => {
       </Container>
 
       {/* Section 2: Future Vision (Blueprint Theme) */}
-      <section className="bg-white py-16 md:py-24 px-4 md:px-8 lg:px-16 w-full">
+      <section className="bg-white py-24 px-4 md:px-8 lg:px-16 w-full">
         <div className="max-w-[1440px] mx-auto flex flex-col gap-8">
           {/* Top Row: Header & Socials */}
           <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12">
@@ -185,7 +180,7 @@ const About = () => {
       </section>
 
       {/* Section 3: Deep Dive Details (Editorial Theme) */}
-      <Container className="py-16 md:py-24">
+      <Container className="py-24">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
           <motion.div
             initial={{ x: -40, opacity: 0 }}
@@ -281,22 +276,22 @@ const About = () => {
                   }`}>
                   <div className="overflow-hidden">
                     {/* Media Container */}
-                    <div className="relative w-full aspect-21/9 rounded-3xl overflow-hidden mb-12">
+                    <div className="relative w-full aspect-[16/10] md:aspect-21/9 rounded-3xl overflow-hidden mb-12">
                       <img src={item.image} alt={`Visualisasi ${item.title} ErdaMotor`} className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"></div>
 
                       {/* Stats Overlay */}
-                      <div className="absolute top-8 left-8 text-white">
-                        <div className="flex items-baseline gap-2">
-                          <span className="text-6xl md:text-8xl font-black">{item.stats[0].value}</span>
-                          <span className="text-xl font-medium text-white/70">{item.stats[0].label}</span>
+                      <div className="absolute top-4 md:top-8 left-4 md:left-8 text-white">
+                        <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-2">
+                          <span className="text-4xl md:text-8xl font-black leading-none">{item.stats[0].value}</span>
+                          <span className="text-xs md:text-xl font-medium text-[#d8f552] md:text-white/70 uppercase tracking-widest">{item.stats[0].label}</span>
                         </div>
                       </div>
 
-                      <div className="absolute bottom-8 right-8 text-white text-right">
-                        <div className="flex flex-col items-end">
-                          <span className="text-4xl md:text-6xl font-black">{item.stats[1].value}</span>
-                          <span className="text-lg font-medium text-white/70">{item.stats[1].label}</span>
+                      <div className="absolute bottom-4 md:bottom-8 right-4 md:right-8 text-white text-right">
+                        <div className="flex flex-col items-end gap-1 md:gap-0">
+                          <span className="text-3xl md:text-6xl font-black leading-none">{item.stats[1].value}</span>
+                          <span className="text-[10px] md:text-lg font-medium text-white/50 md:text-white/70 uppercase tracking-widest">{item.stats[1].label}</span>
                         </div>
                       </div>
                     </div>
@@ -322,15 +317,7 @@ const About = () => {
                           {item.description}
                         </p>
 
-                        <a
-                          href="#contact"
-                          className="group flex items-center gap-4 bg-red-500 text-white rounded-full py-4 px-8 font-bold text-lg hover:bg-black transition-all duration-300 shadow-xl"
-                        >
-                          Learn More
-                          <div className="bg-white/20 p-2 rounded-full group-hover:bg-white/40 transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                          </div>
-                        </a>
+
                       </div>
                     </div>
                   </div>

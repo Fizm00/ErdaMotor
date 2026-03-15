@@ -12,7 +12,7 @@ const SectionHeader = ({ label, title, description, align = 'left', className = 
   const isCenter = align === 'center';
 
   return (
-    <div className={`flex flex-col ${isCenter ? 'items-center text-center' : 'justify-between items-end md:items-start'} gap-6 ${className}`}>
+    <div className={`flex flex-col ${isCenter ? 'items-center text-center' : 'items-start'} gap-6 ${className}`}>
       <div className={`max-w-2xl ${isCenter ? 'flex flex-col items-center' : ''}`}>
         {label && (
           <div className="flex items-center gap-2 mb-4 text-xs font-bold tracking-[0.2em] text-gray-400 uppercase">

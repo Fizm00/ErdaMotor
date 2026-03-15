@@ -6,7 +6,7 @@ import { galleryItems } from '../data';
 const Gallery = () => {
 
   return (
-    <Container id="gallery" className="">
+    <Container id="gallery" className="py-24">
       {/* Header */}
       <motion.div 
         initial={{ y: 30, opacity: 0 }}

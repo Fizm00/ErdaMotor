@@ -105,7 +105,7 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.8 }}
-              className="absolute right-6 bottom-10 md:bottom-12 flex flex-col items-end text-right"
+              className="hidden md:flex absolute right-6 bottom-12 flex-col items-end text-right"
             >
               <span className="text-white font-bold tracking-widest text-sm md:text-base uppercase">
                 {siteConfig.name}

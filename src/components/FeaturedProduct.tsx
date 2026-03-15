@@ -116,7 +116,7 @@ const FeaturedProduct = () => {
           className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12"
         >
           {/* Cash Option */}
-          <div className="bg-[#f8f8fb] rounded-4xl p-10 md:p-14 border border-gray-100 group hover:bg-white hover:shadow-xl transition-all duration-500">
+          <div className="bg-[#f8f8fb] rounded-4xl p-10 md:p-14 border border-gray-200 group hover:bg-white hover:shadow-xl transition-all duration-500">
             <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center mb-8 shadow-sm border border-gray-100 group-hover:scale-110 transition-transform">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-900"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
             </div>
