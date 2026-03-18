@@ -13,7 +13,7 @@ const Categories = () => {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        className="will-change-transform"
+        className="will-change-transform mb-16"
       >
         <SectionHeader
           label="Kategori Produk"
@@ -28,7 +28,7 @@ const Categories = () => {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px] mt-16 will-change-transform"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px] will-change-transform"
       >
         {categories.map((cat, index) => {
           if (cat.id === 'unit-bekas') {

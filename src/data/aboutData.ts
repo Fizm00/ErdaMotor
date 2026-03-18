@@ -2,8 +2,8 @@ import motorImg from '../assets/benneli.jpg';
 import partsImg from '../assets/cb150rmods.jpg';
 import serviceImg from '../assets/vesmet.jpg';
 import carInspectionImg from '../assets/car-inspection.png';
-import carLuxuryImg from '../assets/car-luxury.png';
-import carSuvImg from '../assets/car-suv.png';
+import carLuxuryImg from '../assets/Civic.jpg';
+import carSuvImg from '../assets/innova.jpg';
 
 export const accordionItems = [
   {
@@ -65,7 +65,7 @@ export const carInspectionStats = [
   { label: 'Cek Dokumen', value: 'Full' }
 ];
 
-export const aboutBrands = ['HONDA', 'YAMAHA', 'VESPA', 'KAWASAKI', 'SUZUKI', 'BMW', 'MERCEDES', 'PORSCHE', 'TOYOTA'];
+export const aboutBrands = ['HONDA', 'YAMAHA', 'VESPA', 'KAWASAKI', 'SUZUKI', 'MITSUBISHI', 'DAIHATSU', 'TOYOTA'];
 export const carShowcaseDescription = 'Setiap kendaraan dalam koleksi eksklusif kami telah melewati proses kurasi dan inspeksi teknis yang sangat ketat, menjamin standar kualitas tertinggi untuk kenyamanan dan keamanan berkendara Anda.';
 
 export { carInspectionImg, carLuxuryImg, carSuvImg };

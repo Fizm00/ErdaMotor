@@ -13,7 +13,7 @@ const About = () => {
   const [openAccordion, setOpenAccordion] = useState<number | null>(null);
 
   return (
-    <div className="w-full bg-white flex flex-col pt-16">
+    <div className="w-full bg-white flex flex-col">
       {/* Section 1: Introduction & Trust (White Theme) */}
       <Container id="about" className="py-24">
         {/* Header Area */}
@@ -86,7 +86,6 @@ const About = () => {
             <div className="flex flex-col md:flex-row justify-between items-start gap-8">
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-[2px] bg-red-600"></div>
                   <span className="text-gray-400 text-xs font-bold tracking-[0.2em] uppercase">Tentang Kami</span>
                 </div>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight leading-tight">
@@ -131,7 +130,6 @@ const About = () => {
           <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12">
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-[2px] bg-red-600"></div>
                 <span className="text-gray-400 text-xs font-bold tracking-[0.2em] uppercase">Visi & Misi</span>
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-gray-900 max-w-2xl">
@@ -244,9 +242,6 @@ const About = () => {
               <p className="text-gray-600 text-lg mb-10 max-w-lg">
                 Anda mengenal kami sebagai dealer kendaraan spesial, kini kami juga memfasilitasi penjualan mobil pilihan pelanggan kami dengan proses yang sangat transparan.
               </p>
-              <button className="bg-black text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-red-600 transition-all shadow-lg hover:scale-105">
-                Valuasi Gratis
-              </button>
             </div>
 
             <div className="flex flex-col gap-8">
@@ -346,7 +341,7 @@ const About = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="w-full"
         >
-          <div className="flex justify-end items-center mb-8 border-b border-gray-200 pb-4">
+          <div className="flex justify-end items-center mb-16 border-b border-gray-200 pb-4">
             <p className="text-lg font-medium text-gray-900 text-right">Temukan detail teknis spesifik <br /> tentang tiap kendaraan.</p>
           </div>
 

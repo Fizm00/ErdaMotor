@@ -1,16 +1,16 @@
 import { motion } from 'framer-motion';
 import Container from './common/Container';
-import mcyHero from '../assets/about-hero-moto.jpg';
+import mcyHero from '../assets/porsche.jpg';
 import mcyEdit from '../assets/about-editorial.png';
 
 const WhyChooseUs = () => {
 
   return (
     <Container id="why-choose-us" className="py-24 bg-white">
-      <motion.div 
+      <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, margin:"-50px" }}
+        viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[minmax(300px,auto)]"
       >
@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
               alt="Koleksi Kendaraan Premium"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
           </div>
 
           <div className="relative z-10">

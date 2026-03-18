@@ -31,7 +31,7 @@ const Testimonials = () => {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, margin:"-50px" }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-12 gap-6 md:gap-8"
+        className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6 md:gap-8"
       >
         <SectionHeader
           label="Ulasan Pelanggan"

@@ -1,62 +1,62 @@
 import vesmatImg from '../assets/vesmet.jpg';
-import cbrImg from '../assets/zx25.jpg'; // High-end placeholder for CBR
-import carLuxuryImg from '../assets/car-luxury.png';
-import carSuvImg from '../assets/car-suv.png';
+import cbrImg from '../assets/cbr250rr.jpg';
+import carLuxuryImg from '../assets/civicrs.jpg';
+import carSuvImg from '../assets/pajerosportdakar.jpg';
 
 export const featuredProducts = [
   {
-    id: 'bmw-330i-m-sport',
-    name: 'BMW 330i M Sport',
+    id: 'honda-civic-rs',
+    name: 'Honda Civic RS',
     year: '2023',
-    tagline: 'Sheer Driving Pleasure',
-    price: 'Rp 985.000.000',
-    description: 'Sedan mewah dengan performa luar biasa dan teknologi mutakhir. BMW 330i M Sport memberikan pengalaman berkendara yang dinamis dengan kenyamanan kabin kelas satu.',
+    tagline: 'Legacy of Speed',
+    price: 'Rp 601.000.000',
+    description: 'Sedan sporty dengan desain ikonik dan performa VTEC Turbo yang legendaris. Honda Civic RS menggabungkan kenyamanan berkendara harian dengan jiwa balap di setiap tarikannya.',
     specs: [
-      { label: 'Transmisi', value: '8-Speed Steptronic' },
-      { label: 'Mesin', value: '2.0L TwinPower Turbo' },
-      { label: 'Tenaga', value: '258 HP / 400 Nm' },
-      { label: 'Fitur', value: 'BMW Live Cockpit' }
+      { label: 'Transmisi', value: 'CVT with Dream Technology' },
+      { label: 'Mesin', value: '1.5L VTEC Turbo' },
+      { label: 'Tenaga', value: '178 PS / 240 Nm' },
+      { label: 'Fitur', value: 'Honda SENSING' }
     ],
     image: carLuxuryImg,
     paymentOptions: {
       cash: {
         title: 'Tunai',
-        price: 'Rp 985.000.000',
-        benefits: ['Garansi B+ 3 Tahun', 'Free Service 5 Tahun', 'Voucher BBM 5jt']
+        price: 'Rp 601.000.000',
+        benefits: ['Garansi Resmi 3 Thn', 'Free Service & Parts 50rb Km', 'Kaca Film V-Kool']
       },
       credit: {
         title: 'Kredit',
-        price: 'Rp 15.500.000',
+        price: 'Rp 9.500.000',
         period: '/ bln',
-        benefits: ['Bunga 0% (1thn)', 'DP mulai 150jt', 'Asuransi All Risk']
+        benefits: ['DP mulai 80jt', 'Tenor 1-5 Tahun', 'Bonus Karpet Dasar']
       }
     }
   },
   {
-    id: 'toyota-fortuner-2.8-gr-s',
-    name: 'Fortuner 2.8 GR Sport',
+    id: 'mitsubishi-pajero-sport-gr',
+    name: 'Pajero Sport Dakar',
     year: '2024',
-    tagline: 'Lead The World',
-    price: 'Rp 725.000.000',
-    description: 'SUV tangguh untuk segala medan dengan mesin diesel 2.8L yang sangat bertenaga. Varian GR Sport memberikan tampilan yang lebih agresif dan suspensi yang lebih presisi.',
+    tagline: 'Live The Adventure',
+    price: 'Rp 625.000.000',
+    description: 'SUV legendaris pemenang Dakar dengan ketangguhan yang tak tertandingi. Pajero Sport Dakar hadir dengan fitur keamanan canggih dan interior mewah untuk petualangan keluarga Anda.',
     specs: [
-      { label: 'Transmisi', value: '6-Speed Automatic' },
-      { label: 'Mesin', value: '2.8L Diesel Turbo' },
-      { label: 'Torsi', value: '500 Nm / 1600 RPM' },
-      { label: 'Fitur', value: '7 Airbags & TSS' }
+      { label: 'Transmisi', value: '8-Speed Automatic' },
+      { label: 'Mesin', value: '2.4L MIVEC Diesel Turbo' },
+      { label: 'Torsi', value: '430 Nm / 2500 RPM' },
+      { label: 'Fitur', value: 'ASTC & Forward Collision Mitigation' }
     ],
     image: carSuvImg,
     paymentOptions: {
       cash: {
         title: 'Tunai',
-        price: 'Rp 725.000.000',
-        benefits: ['Gratis Aksesoris GR', 'E-Money 2jt', 'Full Coating']
+        price: 'Rp 625.000.000',
+        benefits: ['Gratis Paket Smart Silver', 'Talang Air & Grill GR', 'Full Nano Coating']
       },
       credit: {
         title: 'Kredit',
-        price: 'Rp 11.200.000',
+        price: 'Rp 10.800.000',
         period: '/ bln',
-        benefits: ['Angsuran Ringan', 'DP Rendah', 'Proses Cepat 1 Hari']
+        benefits: ['Cicilan Murah', 'DP mulai 120jt', 'Asuransi Kehilangan']
       }
     }
   },

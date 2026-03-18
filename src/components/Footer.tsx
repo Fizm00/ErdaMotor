@@ -4,7 +4,7 @@ import { siteConfig, navigationLinks } from '../data';
 const Footer = () => {
 
    return (
-      <footer className="w-full bg-white px-2 pb-2 mt-12 md:mt-0">
+      <footer className="w-full bg-white px-2 pb-2 pt-24">
          <motion.div 
             initial={{ scale: 0.96, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
