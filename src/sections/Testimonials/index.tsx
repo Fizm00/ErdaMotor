@@ -88,7 +88,7 @@ const Testimonials = () => {
           <div className="rounded-4xl overflow-hidden bg-[#e0e1db] h-[400px] lg:h-full relative">
             <img
               src={current.image}
-              alt="Customer Experience"
+              alt={`Ulasan pelanggan ErdaMotor mengenai pengalaman pembelian kendaraan` }
               className="w-full h-full object-cover object-center scale-110"
             />
             <div className="absolute inset-0 bg-black/5 mix-blend-multiply pointer-events-none"></div>

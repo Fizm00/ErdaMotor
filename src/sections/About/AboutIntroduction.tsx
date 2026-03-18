@@ -38,7 +38,7 @@ const AboutIntroduction = () => {
         >
           <img
             src={mcyB}
-            alt="Premium Vehicle Showcase"
+            alt="Showcase koleksi mobil dan motor bekas premium di showroom ErdaMotor"
             className="w-full h-full object-cover rounded-3xl"
             decoding="async"
           />

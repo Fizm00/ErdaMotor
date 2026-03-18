@@ -31,7 +31,7 @@ const AboutHighlights = () => {
             transition={{ duration: 1 }}
             className="relative w-full aspect-21/9 rounded-3xl overflow-hidden mt-8 shadow-2xl border border-gray-100"
           >
-            <img src={carLuxuryImg} alt="Luxury Car Showcase" className="w-full h-full object-cover" />
+            <img src={carLuxuryImg} alt="Koleksi sedan mewah dan mobil eksotis pilihan di ErdaMotor Temanggung" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-linear-to-r from-black/40 via-transparent to-transparent"></div>
 
             {/* Landing Text Highlights - Paragraph Style (Refined) */}

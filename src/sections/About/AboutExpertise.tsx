@@ -48,7 +48,7 @@ const AboutExpertise = () => {
           viewport={{ once: true }}
           className="mt-20 w-full aspect-16/7 rounded-[3rem] overflow-hidden shadow-3xl"
         >
-          <img src={carSuvImg} alt="Family SUV" className="w-full h-full object-cover" />
+          <img src={carSuvImg} alt="Unit SUV keluarga tangguh dan berkualitas tersedia di ErdaMotor" className="w-full h-full object-cover" />
         </motion.div>
       </Container>
     </section>

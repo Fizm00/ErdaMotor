@@ -73,7 +73,7 @@ const WhyChooseUs = () => {
           <div className="absolute inset-0 z-0">
             <img
               src={mcyEdit}
-              alt="Mechanic"
+              alt="Mekanik ahli ErdaMotor sedang melakukan inspeksi kendaraan"
               className="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black/60 to-transparent"></div>
