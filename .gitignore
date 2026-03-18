@@ -27,6 +27,7 @@ dist-ssr
 compress_assets.js
 remove_contain_paint.js
 remove_will_change.js
+optimize_favicon.js
 
 # Antigravity/AI Workspace Data
 .gemini/

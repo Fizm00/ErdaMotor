@@ -29,15 +29,15 @@ const AboutHighlights = () => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="relative w-full aspect-21/9 rounded-3xl overflow-hidden mt-8 shadow-2xl border border-gray-100"
+            className="relative w-full aspect-video md:aspect-21/9 rounded-3xl overflow-hidden mt-8 shadow-2xl border border-gray-100"
           >
             <img src={carLuxuryImg} alt="Koleksi sedan mewah dan mobil eksotis pilihan di ErdaMotor Temanggung" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-linear-to-r from-black/40 via-transparent to-transparent"></div>
 
             {/* Landing Text Highlights - Paragraph Style (Refined) */}
-            <div className="absolute bottom-12 left-8 right-8 max-w-2xl flex items-start gap-6">
+            <div className="absolute bottom-4 md:bottom-12 left-4 md:left-8 right-4 md:right-8 max-w-2xl flex items-start gap-4 md:gap-6">
               <div className="w-1 self-stretch bg-red-600 shadow-[0_0_15px_rgba(220,38,38,0.5)] rounded-full"></div>
-              <p className="text-white text-base md:text-lg leading-relaxed font-light drop-shadow-lg">
+              <p className="text-white text-xs sm:text-sm md:text-lg leading-relaxed font-light drop-shadow-lg">
                 {carShowcaseDescription}
               </p>
             </div>

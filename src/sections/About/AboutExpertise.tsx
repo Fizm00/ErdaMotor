@@ -46,7 +46,7 @@ const AboutExpertise = () => {
           initial={{ scale: 0.95, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-20 w-full aspect-16/7 rounded-[3rem] overflow-hidden shadow-3xl"
+          className="mt-20 w-full aspect-video md:aspect-16/7 rounded-[3rem] overflow-hidden shadow-3xl"
         >
           <img src={carSuvImg} alt="Unit SUV keluarga tangguh dan berkualitas tersedia di ErdaMotor" className="w-full h-full object-cover" />
         </motion.div>
