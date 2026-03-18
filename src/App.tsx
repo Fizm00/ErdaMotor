@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import Lenis from 'lenis'
+import { Analytics } from '@vercel/analytics/react'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import WhyChooseUs from './sections/WhyChooseUs'
@@ -45,6 +46,7 @@ function App() {
       <Gallery />
       <Location />
       <Footer />
+      <Analytics />
     </main>
   )
 }
