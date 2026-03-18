@@ -1,6 +1,6 @@
-import motorImg from '../assets/benneli.jpg';
-import partsImg from '../assets/cb150rmods.jpg';
-import serviceImg from '../assets/vesmet.jpg';
+import motorImg from '../assets/carmachine.jpg';
+import partsImg from '../assets/sparepart.jpg';
+import serviceImg from '../assets/carservice.jpg';
 import carInspectionImg from '../assets/car-inspection.png';
 import carLuxuryImg from '../assets/Civic.jpg';
 import carSuvImg from '../assets/innova.jpg';
@@ -30,7 +30,7 @@ export const accordionItems = [
   },
   {
     id: 3,
-    title: 'Garansi & Sparepart Orisinal',
+    title: 'Garansi & Sparepart Original',
     description: 'Kami hanya menggunakan suku cadang original dari pabrikan resmi. Setiap onderdil yang diganti selama proses rekondisi dijamin keasliannya, memberikan Anda ketenangan pikiran untuk perjalanan jarak jauh.',
     highlights: ['Suku cadang 100% original', 'Garansi mesin pilihan', 'Layanan purna jual prima', 'Ketersediaan part terjamin'],
     image: partsImg,

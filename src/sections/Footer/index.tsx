@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion';
-import { siteConfig, navigationLinks } from '../data';
+import { siteConfig, navigationLinks } from '../../data';
 
 const Footer = () => {
 
    return (
       <footer className="w-full bg-white px-2 pb-2 pt-24">
-         <motion.div 
+         <motion.div
             initial={{ scale: 0.96, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
-            viewport={{ once: true, margin:"-50px" }}
+            viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="bg-[#111111] w-full rounded-4xl pt-16 pb-8 md:pt-24 px-8 md:px-16 lg:px-24 flex flex-col text-white pb-safe overflow-hidden"
          >
@@ -27,12 +27,18 @@ const Footer = () => {
                      Siap untuk<br />mendapatkan<br />kendaraan impian?
                   </h2>
 
-                  <button className="self-start flex items-center justify-between bg-white text-black pl-6 pr-2 py-2 rounded-full font-medium w-full max-w-[280px] hover:bg-gray-100 transition-colors group">
-                     <span>Jelajahi Sekarang</span>
-                     <div className="w-10 h-10 bg-[#111111] rounded-full flex items-center justify-center text-white group-hover:bg-black transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                     </div>
-                  </button>
+                  <a
+                     href={`${siteConfig.contact.whatsapp}?text=Halo%20ErdaMotor%2C%20saya%20ingin%20bertanya%20mengenai%20unit%20yang%20tersedia.`}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     <button className="self-start flex items-center justify-between bg-white text-black pl-6 pr-2 py-2 rounded-full font-medium w-full max-w-[280px] hover:bg-gray-100 transition-colors group">
+                        <span>Jelajahi Sekarang</span>
+                        <div className="w-10 h-10 bg-[#111111] rounded-full flex items-center justify-center text-white group-hover:bg-black transition-colors">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                     </button>
+                  </a>
                </div>
 
                {/* Right Container: Links and Contact */}

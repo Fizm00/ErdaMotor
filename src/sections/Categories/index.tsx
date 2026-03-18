@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
-import Container from './common/Container';
-import SectionHeader from './common/SectionHeader';
-import { categories } from '../data';
+import Container from '../../components/ui/Container';
+import SectionHeader from '../../components/ui/SectionHeader';
+import { categories } from '../../data';
 
 const Categories = () => {
-
   return (
-    <Container id="categories" className="contain-[paint]">
+    <section id="categories" className="w-full bg-white overflow-hidden py-24">
+      <Container className="contain-[paint]">
       {/* Header */}
       <motion.div
         initial={{ y: 30, opacity: 0 }}
@@ -62,7 +62,7 @@ const Categories = () => {
                   >
                     <div className="absolute inset-0 z-0">
                       <img src={subCat.image} alt={`Kategori ${subCat.title} - ErdaMotor`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                      <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-500"></div>
+                      <div className="absolute inset-0 bg-black/5 group-hover:bg-black/60 transition-colors duration-500"></div>
                     </div>
                     <div className="relative z-10 h-full flex flex-col justify-between p-6">
                       <h3 className="text-2xl font-bold text-white leading-tight">{subCat.title}</h3>
@@ -81,7 +81,8 @@ const Categories = () => {
           return null;
         })}
       </motion.div>
-    </Container>
+      </Container>
+    </section>
   );
 };
 

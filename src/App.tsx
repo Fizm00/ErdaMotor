@@ -1,14 +1,14 @@
 import { useEffect } from 'react'
 import Lenis from 'lenis'
-import Hero from './components/Hero'
-import About from './components/About'
-import WhyChooseUs from './components/WhyChooseUs'
-import Testimonials from './components/Testimonials'
-import Categories from './components/Categories'
-import FeaturedProduct from './components/FeaturedProduct'
-import Gallery from './components/Gallery'
-import Location from './components/Location'
-import Footer from './components/Footer'
+import Hero from './sections/Hero'
+import About from './sections/About'
+import WhyChooseUs from './sections/WhyChooseUs'
+import Testimonials from './sections/Testimonials'
+import Categories from './sections/Categories'
+import FeaturedProduct from './sections/FeaturedProduct'
+import Gallery from './sections/Gallery'
+import Location from './sections/Location'
+import Footer from './sections/Footer'
 
 function App() {
   useEffect(() => {

@@ -1,9 +1,8 @@
-import heroBg from '../assets/hero-bg.jpg';
+import heroBg from '../../assets/hero-bg.jpg';
 import { motion } from 'framer-motion';
-import { siteConfig, navigationLinks } from '../data';
+import { siteConfig, navigationLinks } from '../../data';
 
 const Hero = () => {
-
   return (
     <section className="w-full h-screen min-h-[600px] p-[10px] md:p-[20px] bg-[#ffffff]">
       <div className="relative w-full h-full flex flex-col overflow-hidden bg-black rounded-3xl">
@@ -74,7 +73,7 @@ const Hero = () => {
                 className="flex"
               >
                 <a 
-                  href="https://wa.me/6281234567890" 
+                  href={`${siteConfig.contact.whatsapp}?text=Halo%20ErdaMotor%2C%20saya%20tertarik%20untuk%20konsultasi%20kendaraan.`} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group relative flex items-center justify-between bg-white text-gray-900 rounded-full py-4 px-8 font-bold text-lg shadow-2xl hover:bg-[#d8f552] transition-all duration-300 overflow-hidden"

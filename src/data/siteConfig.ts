@@ -15,9 +15,9 @@ export const siteConfig = {
     detail: 'Jl. Raya Kedu - Parakan, Sabrang, Danurejo, Kec. Kedu, Kabupaten Temanggung, Jawa Tengah 56252',
   },
   contact: {
-    phone: '021 3345 3310',
+    phone: '+62 812-2902-144',
     email: 'support@erdamotor.com',
-    whatsapp: 'https://wa.me/628123456789',
+    whatsapp: 'https://wa.me/628122902144',
   },
   socials: {
     instagram: '#',

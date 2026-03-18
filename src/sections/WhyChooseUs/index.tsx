@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
-import Container from './common/Container';
-import mcyHero from '../assets/porsche.jpg';
-import mcyEdit from '../assets/about-editorial.png';
+import Container from '../../components/ui/Container';
+import mcyHero from '../../assets/porsche.jpg';
+import mcyEdit from '../../assets/about-editorial.png';
 
 const WhyChooseUs = () => {
 
   return (
-    <Container id="why-choose-us" className="py-24 bg-white">
+    <section id="why-choose-us" className="w-full py-24 bg-white overflow-hidden">
+      <Container>
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -29,7 +30,7 @@ const WhyChooseUs = () => {
         <div className="bg-[#fef9f3] rounded-[2.5rem] p-10 flex flex-col justify-between group hover:shadow-xl transition-all duration-500">
           <h3 className="text-xl font-bold text-gray-900">Terpercaya</h3>
           <p className="text-gray-600 text-sm leading-relaxed max-w-[200px]">
-            Lebih dari 10 tahun melayani ribuan pelanggan dengan integritas tinggi.
+            Lebih dari 10 tahun melayani ribuan pelanggan with integritas tinggi.
           </p>
         </div>
 
@@ -86,7 +87,8 @@ const WhyChooseUs = () => {
         </div>
 
       </motion.div>
-    </Container>
+      </Container>
+    </section>
   );
 };
 
