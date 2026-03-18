@@ -8,7 +8,7 @@ export const navigationLinks = [
 
 export const siteConfig = {
   name: 'ErdaMotor',
-  tagline: 'Temukan Sepeda Motor Bekas & Onderdil Terbaik',
+  tagline: 'Temukan Kendaraan Bekas Berkualitas & Sparepart Terpercaya',
   ctaText: 'Jelajahi',
   address: {
     title: 'Pusat Temanggung',

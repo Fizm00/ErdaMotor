@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
             Kenapa Memilih<br />ErdaMotor?
           </h2>
           <p className="text-gray-500 text-lg leading-relaxed max-w-xs">
-            Komitmen kami adalah memberikan pengalaman jual-beli motor yang paling aman dan transparan.
+            Komitmen kami adalah memberikan pengalaman jual-beli kendaraan yang paling aman dan transparan.
           </p>
         </div>
 
@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
           <div className="absolute inset-0 z-0">
             <img
               src={mcyHero}
-              alt="Premium Motorcycle"
+              alt="Koleksi Kendaraan Premium"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent"></div>

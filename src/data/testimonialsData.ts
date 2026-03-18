@@ -3,13 +3,13 @@ import motorImg from '../assets/cat-motor.png';
 
 export const testimonials = [
   {
-    quote: '"Awalnya saya ragu beli motor bekas secara online. Tapi detail inspeksi dari ErdaMotor terbukti 100% akurat. Motor saya terima rasanya seperti baru keluar dari dealer resmi!"',
+    quote: '"Awalnya saya ragu beli kendaraan bekas secara online. Tapi detail inspeksi dari ErdaMotor terbukti 100% akurat. Unit saya terima rasanya seperti baru keluar dari dealer resmi!"',
     name: 'Budi S.',
     role: 'Pengusaha & Pengendara Harian',
     image: partsImg,
   },
   {
-    quote: '"Pelayanan ErdaMotor sangat profesional. Proses cepat, dokumen lengkap, dan kondisi motor sesuai dengan deskripsi. Saya sudah rekomendasikan ke banyak teman!"',
+    quote: '"Pelayanan ErdaMotor sangat profesional. Proses cepat, dokumen lengkap, dan kondisi unit sesuai dengan deskripsi. Saya sudah rekomendasikan ke banyak teman!"',
     name: 'Andi W.',
     role: 'Karyawan Swasta',
     image: motorImg,

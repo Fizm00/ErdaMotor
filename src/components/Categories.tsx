@@ -18,7 +18,7 @@ const Categories = () => {
         <SectionHeader
           label="Kategori Produk"
           title="Apa yang Anda Cari Hari Ini?"
-          description="Jelajahi pilihan terbaik kami mulai dari motor bekas bersertifikat, suku cadang baru bergaransi, hingga aksesoris premium untuk gaya berkendara Anda."
+          description="Jelajahi pilihan terbaik kami mulai dari mobil & motor bekas bersertifikat, suku cadang baru bergaransi, hingga aksesoris premium untuk gaya berkendara Anda."
         />
       </motion.div>
 
@@ -31,11 +31,11 @@ const Categories = () => {
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px] mt-16 will-change-transform"
       >
         {categories.map((cat, index) => {
-          if (cat.id === 'motor-bekas') {
+          if (cat.id === 'unit-bekas') {
             return (
               <a key={cat.id} href={`#${cat.id}`} className={`group relative rounded-3xl overflow-hidden block shadow-sm hover:shadow-xl transition-all duration-500 ${cat.span || ''}`}>
                 <div className="absolute inset-0 z-0">
-                  <img src={cat.image} alt="Koleksi unit motor bekas berkualitas di ErdaMotor" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={cat.image} alt="Koleksi unit kendaraan bekas berkualitas di ErdaMotor" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"></div>
                 </div>
                 <div className="relative z-10 h-full flex flex-col justify-end p-8">

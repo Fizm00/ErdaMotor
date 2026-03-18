@@ -14,7 +14,7 @@ export const whyChooseUsData = [
   {
     icon: 'Clock',
     title: 'Proses Cepat',
-    description: 'Pengurusan dokumen dan pengiriman motor yang efisien dan transparan.',
+    description: 'Pengurusan dokumen dan pengiriman unit yang efisien dan transparan.',
     bgColor: 'bg-[#f3f6ff]' // Soft Blue
   }
 ];

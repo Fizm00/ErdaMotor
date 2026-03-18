@@ -7,7 +7,7 @@ import mcyE from '../assets/r25.jpg';
 import { motion } from 'framer-motion';
 import Container from './common/Container';
 import SectionHeader from './common/SectionHeader';
-import { accordionItems, aboutBrands } from '../data';
+import { accordionItems, aboutBrands, carBenefits, carShowcaseDescription, carLuxuryImg, carSuvImg } from '../data';
 
 const About = () => {
   const [openAccordion, setOpenAccordion] = useState<number | null>(null);
@@ -26,17 +26,17 @@ const About = () => {
         >
           <SectionHeader
             label="Tentang Kami"
-            title="Pusat Jual Beli Motor Bekas Berkualitas & Sparepart Terbesar"
+            title="Pusat Jual Beli Mobil & Motor Bekas Berkualitas & Sparepart"
             className="max-w-2xl"
           />
           <div className="max-w-xs md:mt-12">
             <p className="text-gray-600 text-sm leading-relaxed">
-              Sejak 2005, ErdaMotor hadir sebagai destinasi terpercaya untuk kebutuhan kendaraan roda dua dan suku cadang Anda.
+              Sejak 2005, ErdaMotor hadir sebagai destinasi terpercaya untuk kebutuhan kendaraan roda dua & empat serta suku cadang original Anda.
             </p>
           </div>
         </motion.div>
 
-        {/* Motorcycle Showcase */}
+        {/* Vehicle Showcase */}
         <motion.div
           initial={{ y: 40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -46,7 +46,7 @@ const About = () => {
         >
           <img
             src={mcyB}
-            alt="Premium Motorcycle Showcase"
+            alt="Premium Vehicle Showcase"
             className="w-full h-full object-cover rounded-3xl"
             decoding="async"
           />
@@ -55,7 +55,7 @@ const About = () => {
           <div className="absolute bottom-8 left-8 z-10 max-w-sm">
             <h4 className="text-white/50 text-xs font-bold tracking-[0.2em] uppercase mb-4">ErdaMotor Quality</h4>
             <p className="text-white text-lg md:text-xl font-light leading-relaxed">
-              Setiap unit lulus <span className="text-[#d8f552] font-semibold">inspeksi 50+ titik</span> dengan ketersediaan <span className="text-[#d8f552] font-semibold">sparepart original</span>.
+              Setiap unit lulus <span className="text-[#d8f552] font-semibold">inspeksi mendalam</span> dengan ketersediaan <span className="text-[#d8f552] font-semibold">sparepart original</span>.
             </p>
           </div>
         </motion.div>
@@ -69,7 +69,7 @@ const About = () => {
           className="mt-20 pt-12 border-t border-gray-100 flex flex-col items-center"
         >
           <p className="text-sm text-gray-500 mb-8 text-center max-w-xl">
-            Kami menyediakan motor dari berbagai merk terkemuka beserta kelengkapan sparepart orisinal dengan jaminan kualitas terbaik di kelasnya.
+            Kami menyediakan mobil dan motor dari berbagai merk terkemuka beserta kelengkapan sparepart orisinal dengan jaminan kualitas terbaik.
           </p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 items-center opacity-60 grayscale">
             {aboutBrands.map((brand) => (
@@ -79,24 +79,75 @@ const About = () => {
         </motion.div>
       </Container>
 
-      {/* Section 2: Future Vision (Blueprint Theme) */}
+      {/* Section 2: Featured Car Highlights */}
+      <section className="bg-white py-24 px-4 md:px-8 lg:px-16 w-full overflow-hidden border-t border-gray-100">
+        <Container>
+          <div className="flex flex-col gap-12">
+            <div className="flex flex-col md:flex-row justify-between items-start gap-8">
+              <div className="flex flex-col gap-4">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-[2px] bg-red-600"></div>
+                  <span className="text-gray-400 text-xs font-bold tracking-[0.2em] uppercase">Tentang Kami</span>
+                </div>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight leading-tight">
+                  Dari koleksi mobil eksotis <br />
+                  hingga sedan mewah <br />
+                  <span className="text-red-600">dan SUV.</span>
+                </h2>
+              </div>
+              <div className="max-w-xs pt-8 md:pt-16">
+                <p className="text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-8">
+                  Koleksi mobil eksotis ErdaMotor menawarkan seleksi yang luar biasa dan layanan personal yang terpercaya. Setiap unit dikurasi untuk kepuasan berkendara Anda.
+                </p>
+              </div>
+            </div>
+
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              className="relative w-full aspect-21/9 rounded-3xl overflow-hidden mt-8 shadow-2xl border border-gray-100"
+            >
+              <img src={carLuxuryImg} alt="Luxury Car Showcase" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-linear-to-r from-black/40 via-transparent to-transparent"></div>
+
+              {/* Landing Text Highlights - Paragraph Style (Refined) */}
+              <div className="absolute bottom-12 left-8 right-8 max-w-2xl flex items-start gap-6">
+                <div className="w-1 self-stretch bg-red-600 shadow-[0_0_15px_rgba(220,38,38,0.5)] rounded-full"></div>
+                <p className="text-white text-base md:text-lg leading-relaxed font-light drop-shadow-lg">
+                  {carShowcaseDescription}
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Section 3: Future Vision (Blueprint Theme) */}
       <section className="bg-white py-24 px-4 md:px-8 lg:px-16 w-full">
         <div className="max-w-[1440px] mx-auto flex flex-col gap-8">
           {/* Top Row: Header & Socials */}
           <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12">
-            <h2 className="text-6xl md:text-8xl font-black uppercase leading-[0.85] tracking-tighter text-gray-900 max-w-2xl">
-              MOTOR BEKAS<br />KUALITAS<br />TERBAIK
-            </h2>
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-[2px] bg-red-600"></div>
+                <span className="text-gray-400 text-xs font-bold tracking-[0.2em] uppercase">Visi & Misi</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-gray-900 max-w-2xl">
+                Kendaraan bekas <br /> kualitas terbaik
+              </h2>
+            </div>
             <div className="w-full md:w-1/3 flex flex-col items-start md:items-end gap-6 md:text-right lg:pt-4">
               <div className="flex gap-2">
                 {[...Array(4)].map((_, i) => (
                   <div key={i} className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-400 group hover:border-gray-900 hover:text-gray-900 transition-colors cursor-pointer">
-                    {i === 0 ? 'F' : i === 1 ? 'I' : i === 2 ? 'X' : 'Y'}
+                    {i === 0 ? 'E' : i === 1 ? 'R' : i === 2 ? 'D' : 'A'}
                   </div>
                 ))}
               </div>
               <p className="text-gray-500 text-sm leading-relaxed font-medium max-w-[280px]">
-                Kami menghadirkan koleksi motor bekas pilihan dan ketersediaan suku cadang lengkap untuk memastikan kendaraan Anda selalu dalam kondisi prima.
+                Kami menghadirkan koleksi mobil dan motor bekas pilihan dan ketersediaan suku cadang lengkap untuk memastikan kendaraan Anda selalu prima.
               </p>
             </div>
           </div>
@@ -106,7 +157,7 @@ const About = () => {
             <div className="flex gap-2 relative z-30 -mb-8 md:-mb-12 ml-4 md:ml-8">
               {[mcyL, mcyD, mcyE].map((img, i) => (
                 <div key={i} className="w-16 h-16 md:w-28 md:h-28 rounded-full overflow-hidden border-2 md:border-4 border-white shadow-xl">
-                  <img src={img} alt={`Koleksi motor bekas ErdaMotor detail ${i + 1}`} className="w-full h-full object-cover" />
+                  <img src={img} alt={`Koleksi kendaraan bekas ErdaMotor detail ${i + 1}`} className="w-full h-full object-cover" />
                 </div>
               ))}
             </div>
@@ -131,7 +182,7 @@ const About = () => {
                         Lebih dari sekadar dealer, <strong className="text-white font-medium">ErdaMotor</strong> adalah mitra perjalanan Anda.
                       </p>
                       <p className="text-gray-400 text-sm md:text-base lg:text-lg leading-relaxed font-light">
-                        Kami berkomitmen memberikan <span className="text-white font-medium">transparansi kondisi mesin</span>, <span className="text-white font-medium">harga yang sangat kompetitif</span>, dan kemudahan mencari sparepart untuk menjadikan setiap perawatan motor lebih efisien.
+                        Kami berkomitmen memberikan <span className="text-white font-medium">transparansi kondisi mesin</span>, <span className="text-white font-medium">harga yang sangat kompetitif</span>, dan kemudahan mencari sparepart untuk menjadikan setiap perawatan kendaraan lebih efisien.
                       </p>
                     </div>
                   </div>
@@ -140,7 +191,7 @@ const About = () => {
                   <div className="grid grid-cols-2 gap-x-6 gap-y-8 md:gap-x-8 md:gap-y-10 pt-4 border-t border-white/10">
                     <div>
                       <h4 className="text-[#d8f552] text-2xl md:text-3xl lg:text-5xl font-bold mb-2">100%</h4>
-                      <p className="text-sm text-gray-500 font-medium">Inspeksi Mesin Transparan</p>
+                      <p className="text-sm text-gray-500 font-medium">Inspeksi Unit Transparan</p>
                     </div>
                     <div>
                       <h4 className="text-[#d8f552] text-2xl md:text-3xl lg:text-5xl font-bold mb-2">15+</h4>
@@ -159,17 +210,17 @@ const About = () => {
 
                 {/* Right Header Text - Scalable typography */}
                 <div className="flex flex-col items-start md:items-end text-left md:text-right ml-0 md:ml-auto order-1 md:order-2 max-w-3xl">
-                  <h3 className="text-5xl md:text-[3.5rem] lg:text-[6rem] xl:text-[7.5rem] font-black uppercase leading-[0.8] tracking-tighter text-white">
-                    TEMUKAN MOTOR<br />
-                    IMPIAN DENGAN<br />
-                    <span className="text-[#d8f552]">HARGA TERBAIK</span>
+                  <h3 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight text-white md:text-right">
+                    Temukan unit <br />
+                    impian dengan <br />
+                    <span className="text-[#d8f552]">harga terbaik</span>
                   </h3>
                 </div>
               </div>
 
               {/* Bottom Image */}
               <div className="relative mt-8 md:mt-0 md:absolute md:bottom-[-8%] md:right-[-2%] w-full md:w-[45%] max-w-3xl aspect-video rounded-3xl md:rounded-full overflow-hidden border-4 md:border-8 lg:border-12 border-[#111418] shadow-2xl md:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.8)] z-30">
-                <img src={mcyA} alt="Motor kustom berkualitas tinggi di ErdaMotor" className="w-full h-full object-cover" />
+                <img src={mcyA} alt="Koleksi kendaraan berkualitas tinggi di ErdaMotor" className="w-full h-full object-cover" />
               </div>
             </div>
 
@@ -179,7 +230,60 @@ const About = () => {
         </div>
       </section>
 
-      {/* Section 3: Deep Dive Details (Editorial Theme) */}
+      {/* Section 4: Transaction Benefits */}
+      <section className="bg-white py-24 w-full border-b border-gray-100">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="flex items-center gap-2 mb-4 text-xs font-bold tracking-[0.2em] text-gray-400 uppercase">
+                Keuntungan
+              </div>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight leading-tight mb-8">
+                Jual Kendaraan Anda <br /> Dengan <span className="text-red-600">Harga Terbaik</span>
+              </h2>
+              <p className="text-gray-600 text-lg mb-10 max-w-lg">
+                Anda mengenal kami sebagai dealer kendaraan spesial, kini kami juga memfasilitasi penjualan mobil pilihan pelanggan kami dengan proses yang sangat transparan.
+              </p>
+              <button className="bg-black text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-red-600 transition-all shadow-lg hover:scale-105">
+                Valuasi Gratis
+              </button>
+            </div>
+
+            <div className="flex flex-col gap-8">
+              {carBenefits.map((benefit, i) => (
+                <div key={i} className="flex gap-6 p-8 rounded-3xl border border-gray-100 hover:border-gray-200 hover:bg-gray-50/50 transition-all group">
+                  <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center group-hover:bg-[#d8f552] transition-colors">
+                    {benefit.icon === 'wallet' && (
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="14" x="2" y="5" rx="2" /><line x1="2" y1="10" x2="22" y2="10" /></svg>
+                    )}
+                    {benefit.icon === 'smile' && (
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M8 14s1.5 2 4 2 4-2 4-2" /><line x1="9" y1="9" x2="9.01" y2="9" /><line x1="15" y1="9" x2="15.01" y2="9" /></svg>
+                    )}
+                    {benefit.icon === 'shield-check' && (
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" /><path d="m9 12 2 2 4-4" /></svg>
+                    )}
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2 uppercase tracking-tight">{benefit.title}</h3>
+                    <p className="text-gray-500 text-sm leading-relaxed">{benefit.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <motion.div
+            initial={{ scale: 0.95, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            className="mt-20 w-full aspect-16/7 rounded-[3rem] overflow-hidden shadow-3xl"
+          >
+            <img src={carSuvImg} alt="Family SUV" className="w-full h-full object-cover" />
+          </motion.div>
+        </Container>
+      </section>
+
+      {/* Section 5: Deep Dive Details (Editorial Theme) */}
       <Container className="py-24">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
           <motion.div
@@ -191,7 +295,7 @@ const About = () => {
           >
             <SectionHeader
               label="Inspeksi"
-              title={<>KARENA TANTANGAN<br />TERBESAR ADALAH<br />TAK TERTANDINGI.</>}
+              title={<>Karena tantangan<br />terbesar adalah<br />tak tertandingi.</>}
               className="mb-12"
             />
             <p className="text-lg font-bold text-gray-900 mb-12 uppercase tracking-wide">Temukan detail inspeksi kami.</p>
@@ -217,14 +321,14 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="relative rounded-3xl overflow-hidden h-full min-h-[500px]"
           >
-            <img src={mcyE} alt="Mekanik ErdaMotor melakukan inspeksi mendalam pada motor" className="absolute inset-0 w-full h-full object-cover" />
+            <img src={mcyE} alt="Mekanik ErdaMotor melakukan inspeksi mendalam pada kendaraan" className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"></div>
 
             {/* Quote Card */}
             <div className="absolute bottom-8 left-8 right-8 bg-black/50 backdrop-blur-xl border border-white/20 p-8 rounded-3xl text-white">
               <span className="text-[#d8f552] text-5xl leading-none font-serif block mb-4">"</span>
               <p className="text-lg md:text-xl leading-relaxed font-medium mb-6">
-                Dengan banyak fitur desain sporty dan detail teknis, setiap motor dicocokkan dengan sempurna untuk performa maksimal di jalan raya.
+                Dengan standar teknis yang ketat, setiap unit dikurasi secara sempurna untuk menghadirkan performa maksimal di jalan raya.
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-8 h-[2px] bg-[#d8f552]"></div>
@@ -242,7 +346,7 @@ const About = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="w-full"
         >
-          <div className="flex justify-end items-center mb-8 border-b border-gray-300 pb-4">
+          <div className="flex justify-end items-center mb-8 border-b border-gray-200 pb-4">
             <p className="text-lg font-medium text-gray-900 text-right">Temukan detail teknis spesifik <br /> tentang tiap kendaraan.</p>
           </div>
 
@@ -256,7 +360,7 @@ const About = () => {
                 >
                   <div className="flex items-center gap-12">
                     <span className="text-gray-400 text-sm font-medium w-6">0{item.id}</span>
-                    <h3 className={`text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-[0.02em] transition-colors ${isOpen ? 'text-black' : 'text-gray-900 group-hover:text-black'
+                    <h3 className={`text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight transition-colors ${isOpen ? 'text-black' : 'text-gray-900 group-hover:text-black'
                       }`}>{item.title}</h3>
                   </div>
                   <div className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${isOpen
@@ -276,7 +380,7 @@ const About = () => {
                   }`}>
                   <div className="overflow-hidden">
                     {/* Media Container */}
-                    <div className="relative w-full aspect-[16/10] md:aspect-21/9 rounded-3xl overflow-hidden mb-12">
+                    <div className="relative w-full aspect-16/10 md:aspect-21/9 rounded-3xl overflow-hidden mb-12">
                       <img src={item.image} alt={`Visualisasi ${item.title} ErdaMotor`} className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"></div>
 
@@ -298,8 +402,8 @@ const About = () => {
 
                     <div className="flex flex-col md:flex-row gap-12 max-w-6xl mx-auto">
                       <div className="md:w-1/3">
-                        <div className="inline-block border border-gray-300 rounded-full px-4 py-1 text-[10px] font-bold uppercase tracking-widest text-gray-900 mb-6 font-mono">
-                          TECHNICAL SPECS
+                        <div className="inline-block border border-gray-300 rounded-full px-4 py-1 text-[10px] font-bold tracking-widest text-gray-900 mb-6 font-mono">
+                          SPESIFIKASI TEKNIS
                         </div>
                         <div className="space-y-4">
                           <ul className="space-y-3">

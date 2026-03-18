@@ -6,7 +6,7 @@ export const galleryItems = [
   {
     id: 1,
     title: "Showroom Utama",
-    subtitle: "Eksplorasi koleksi motor impian Anda di ruang pamer premium kami.",
+    subtitle: "Eksplorasi koleksi kendaraan impian Anda di ruang pamer premium kami.",
     image: mcyHero,
     imageProps: "object-[30%_center] brightness-90",
     gridClass: "lg:col-span-2 lg:row-span-2 md:col-span-2 md:row-span-2",
@@ -53,8 +53,8 @@ export const galleryItems = [
   },
   {
     id: 7,
-    title: "Komunitas Rider",
-    subtitle: "Bergabung bersama ribuan pengendara lainnya.",
+    title: "Komunitas Otomotif",
+    subtitle: "Bergabung bersama ribuan pecinta otomotif lainnya.",
     image: mcyHero,
     imageProps: "object-right sepia-[.5] brightness-75",
     gridClass: "lg:col-span-1 lg:row-span-1 md:col-span-1 md:row-span-1",

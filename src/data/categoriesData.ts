@@ -4,9 +4,9 @@ import accImg from '../assets/aksesoris.jpg';
 
 export const categories = [
   {
-    id: 'motor-bekas',
-    title: 'Motor Bekas',
-    description: 'Ratusan motor bekas berkualitas tinggi, telah melewati inspeksi ketat dan siap jalan.',
+    id: 'unit-bekas',
+    title: 'Mobil & Motor Bekas',
+    description: 'Ratusan unit kendaraan bekas berkualitas tinggi, telah melewati inspeksi ketat dan siap jalan.',
     image: motorImg,
     span: 'lg:col-span-2',
   },
@@ -18,8 +18,8 @@ export const categories = [
   },
   {
     id: 'aksesoris',
-    title: 'Aksesoris Motor',
-    subtitle: 'Helm, Jaket, Sarung Tangan, dll.',
+    title: 'Aksesoris Kendaraan',
+    subtitle: 'Helm, Jaket, Perawatan Mobil, dll.',
     image: accImg,
   },
 ];

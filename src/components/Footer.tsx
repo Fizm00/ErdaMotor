@@ -24,7 +24,7 @@ const Footer = () => {
                   </div>
 
                   <h2 className="text-4xl md:text-5xl lg:text-[4rem] font-medium tracking-tight leading-[1.1] mb-10">
-                     Siap untuk<br />mendapatkan<br />motor impian?
+                     Siap untuk<br />mendapatkan<br />kendaraan impian?
                   </h2>
 
                   <button className="self-start flex items-center justify-between bg-white text-black pl-6 pr-2 py-2 rounded-full font-medium w-full max-w-[280px] hover:bg-gray-100 transition-colors group">

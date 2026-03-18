@@ -16,7 +16,7 @@ const Hero = () => {
         >
           <img
             src={heroBg}
-            alt="Classic custom motorcycle"
+            alt="Koleksi Kendaraan Premium ErdaMotor"
             className="w-full h-full object-cover object-center transform-gpu"
             decoding="async"
             loading="eager"

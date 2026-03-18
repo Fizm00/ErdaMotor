@@ -1,62 +1,62 @@
-import varioImg from '../assets/nmax.jpg'; // Using NMAX as placeholder if Vario missing, user will understand
-import cbImg from '../assets/cb150rmods.jpg';
 import vesmatImg from '../assets/vesmet.jpg';
 import cbrImg from '../assets/zx25.jpg'; // High-end placeholder for CBR
+import carLuxuryImg from '../assets/car-luxury.png';
+import carSuvImg from '../assets/car-suv.png';
 
 export const featuredProducts = [
   {
-    id: 'honda-vario-160',
-    name: 'Honda Vario 160',
-    year: '2024',
-    tagline: 'Brand New Power, Premium Style',
-    price: 'Rp 26.500.000',
-    description: 'Skutik premium dengan mesin 160cc yang bertenaga dan irit. Desain sporty dan fitur modern seperti Smart Key System menjadikan Vario 160 pilihan utama untuk mobilitas perkotaan yang dinamis.',
+    id: 'bmw-330i-m-sport',
+    name: 'BMW 330i M Sport',
+    year: '2023',
+    tagline: 'Sheer Driving Pleasure',
+    price: 'Rp 985.000.000',
+    description: 'Sedan mewah dengan performa luar biasa dan teknologi mutakhir. BMW 330i M Sport memberikan pengalaman berkendara yang dinamis dengan kenyamanan kabin kelas satu.',
     specs: [
-      { label: 'Tipe Mesin', value: '160cc, 4-Valve, eSP+' },
-      { label: 'Tenaga Maks', value: '15.4 PS / 8,500 RPM' },
-      { label: 'Torsi Maks', value: '13.8 Nm / 7,000 RPM' },
-      { label: 'Fitur Unggulan', value: 'ABS & Keyless' }
+      { label: 'Transmisi', value: '8-Speed Steptronic' },
+      { label: 'Mesin', value: '2.0L TwinPower Turbo' },
+      { label: 'Tenaga', value: '258 HP / 400 Nm' },
+      { label: 'Fitur', value: 'BMW Live Cockpit' }
     ],
-    image: varioImg,
+    image: carLuxuryImg,
     paymentOptions: {
       cash: {
         title: 'Tunai',
-        price: 'Rp 26.500.000',
-        benefits: ['STNK & BPKB Langsung Nama', 'Service Gratis 1 Tahun', 'Bonus Helm SNI']
+        price: 'Rp 985.000.000',
+        benefits: ['Garansi B+ 3 Tahun', 'Free Service 5 Tahun', 'Voucher BBM 5jt']
       },
       credit: {
         title: 'Kredit',
-        price: 'Rp 850.000',
+        price: 'Rp 15.500.000',
         period: '/ bln',
-        benefits: ['DP mulai 3jt', 'Tenor hingga 35 bulan', 'Asuransi Kehilangan']
+        benefits: ['Bunga 0% (1thn)', 'DP mulai 150jt', 'Asuransi All Risk']
       }
     }
   },
   {
-    id: 'honda-cb150r-streetfire',
-    name: 'Honda CB150R Streetfire',
-    year: '2023',
-    tagline: 'The Real Naked Sport',
-    price: 'Rp 30.500.000',
-    description: 'Naked bike agresif dengan performa mesin DOHC 6-kecepatan. Posisi berkendara tegak yang nyaman menjadikannya partner sempurna baik untuk penggunaan harian maupun touring akhir pekan.',
+    id: 'toyota-fortuner-2.8-gr-s',
+    name: 'Fortuner 2.8 GR Sport',
+    year: '2024',
+    tagline: 'Lead The World',
+    price: 'Rp 725.000.000',
+    description: 'SUV tangguh untuk segala medan dengan mesin diesel 2.8L yang sangat bertenaga. Varian GR Sport memberikan tampilan yang lebih agresif dan suspensi yang lebih presisi.',
     specs: [
-      { label: 'Tipe Mesin', value: '150cc DOHC, 4-Valve' },
-      { label: 'Tenaga Maks', value: '16.9 PS / 9,000 RPM' },
-      { label: 'Torsi Maks', value: '13.8 Nm / 7,000 RPM' },
-      { label: 'Suspensi', value: 'Inverted Front Fork' }
+      { label: 'Transmisi', value: '6-Speed Automatic' },
+      { label: 'Mesin', value: '2.8L Diesel Turbo' },
+      { label: 'Torsi', value: '500 Nm / 1600 RPM' },
+      { label: 'Fitur', value: '7 Airbags & TSS' }
     ],
-    image: cbImg,
+    image: carSuvImg,
     paymentOptions: {
       cash: {
         title: 'Tunai',
-        price: 'Rp 30.500.000',
-        benefits: ['Full Accessories Kit', 'Oli MPX gratis setahun', 'Jaket Exclusive']
+        price: 'Rp 725.000.000',
+        benefits: ['Gratis Aksesoris GR', 'E-Money 2jt', 'Full Coating']
       },
       credit: {
         title: 'Kredit',
-        price: 'Rp 1.150.000',
+        price: 'Rp 11.200.000',
         period: '/ bln',
-        benefits: ['Cicilan Ringan', 'Proses 1 Hari Cair', 'Bonus Maintenance']
+        benefits: ['Angsuran Ringan', 'DP Rendah', 'Proses Cepat 1 Hari']
       }
     }
   },
