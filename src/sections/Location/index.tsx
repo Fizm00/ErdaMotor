@@ -85,10 +85,17 @@ const Location = () => {
                   Hubungi Sales
                 </button>
               </a>
-              <button className="flex-1 bg-white hover:bg-gray-50 text-gray-900 px-6 py-5 rounded-2xl font-bold border border-gray-200 transition-all flex items-center justify-center gap-2 active:scale-[0.98]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
-                Rute
-              </button>
+              <a
+                href={siteConfig.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1"
+              >
+                <button className="w-full bg-white hover:bg-gray-50 text-gray-900 px-6 py-5 rounded-2xl font-bold border border-gray-200 transition-all flex items-center justify-center gap-2 active:scale-[0.98]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+                  Rute
+                </button>
+              </a>
             </div>
           </motion.div>
 

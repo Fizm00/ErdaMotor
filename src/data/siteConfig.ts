@@ -23,4 +23,5 @@ export const siteConfig = {
     instagram: '#',
     facebook: '#',
   },
+  googleMapsUrl: 'https://www.google.com/maps/dir/?api=1&destination=Erda+Motor+Temanggung',
 };
